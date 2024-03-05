@@ -1,0 +1,14 @@
+,context,question,answer,groundedness_score,groundedness_eval,relevance_score,relevance_eval,standalone_score,standalone_eval
+2,boss even with advertising simple to use ive tried to catch it out with older s music  but never have yet well done spotify,"What is a positive comment about Spotify?
+","The boss said that Spotify is simple to use and even after trying to catch it out with older songs, he never has yet. He also praised Spotify by saying ""well done"".",5,"The context clearly states that the boss has tried to find music that is not available on Spotify, but was unable to do so. This implies that Spotify has a wide range of music available, which is a positive aspect of the platform. Additionally, the context mentions that the platform is simple to use, which is another positive comment. Therefore, the question is clearly and unambiguously answerable with the context.
+
+",4,"This question is useful for developers who are building NLP applications that involve sentiment analysis, specifically for the music streaming industry. It can help them to test their models' ability to identify positive comments, which is an essential aspect of sentiment analysis.
+",5,"This question is context-independant, as it is clear that it is asking for a positive comment about the music streaming service Spotify.
+"
+8,nice app but after using it for  or  months it becomes very annoying and later if you use this app offline it shows no internet connection,"What happens when the app is used offline?
+","According to the context, if the app is used offline, it shows no internet connection.",5,"The context clearly states that the app does not work offline and shows a 'no internet connection' message. The context does not provide any information about the app's behavior when used online, but that is not relevant to the question.
+
+",4,"This question is useful for developers who are building NLP applications with the Hugging Face ecosystem and are concerned about the application's performance in offline mode. The answer to this question can help them understand the limitations and requirements of the application when it is used offline.
+",5,"This question is asking about the functionality of the app in an offline context, which is a general concept that is not specific to any particular app or setting. The question is clear and does not require any additional context to be understood.
+
+"
