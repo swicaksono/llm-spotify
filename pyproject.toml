@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "llm-spotify"
+version = "0.1.0"
+description = ""
+authors = ["Sony Wicaksono <you@example.com>"]
+readme = "README.md"
+packages = [{include = "llm_spotify"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "2.1.4"
+numpy = "^1.26.4"
+matplotlib = "^3.8.3"
+langchain = "^0.1.10"
+ray = {extras = ["data"], version = "^2.9.3"}
+pyarrow = "^15.0.0"
+sentence-transformers = "^2.5.1"
+bs4 = "^0.0.2"
+qdrant-client = "^1.7.3"
+python-dotenv = "^1.0.1"
+ragatouille = "^0.0.7.post9"
+streamlit = "^1.31.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
