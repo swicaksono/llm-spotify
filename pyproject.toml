@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "llm-spotify"
 version = "0.1.0"
-description = ""
+description = "LLM's RAG based chat application for Spotify's reviews"
 authors = ["Sony Wicaksono <you@example.com>"]
 readme = "README.md"
 packages = [{include = "llm_spotify"}]
