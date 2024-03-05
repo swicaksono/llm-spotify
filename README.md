@@ -115,3 +115,28 @@ Overall, these issues seem to stem from a combination of technical difficulties,
 5. Demands for better customer support and communication. Many users are struggling to resolve technical issues and account problems, and are frustrated by the lack of responsiveness and resources available through official channels. This highlights the need for improved customer service and communication strategies to address user concerns and build trust.
 
 Overall, these trends suggest a need for greater attention to user feedback and preferences, as well as a focus on improving stability, customization, and value for money. By addressing these concerns, the company can improve user satisfaction and loyalty, and stay ahead of competitors in a crowded market.
+
+## How to Run
+
+This project requires specific versions of Python and Poetry to run. Please ensure your environment meets these requirements before proceeding with the installation.
+
+### Requirements:
+
+- Python >= 3.10.4
+- Poetry == 1.4.0
+
+### Installation:
+
+First, clone this repository to your local machine. Then, navigate to the cloned directory and install the project dependencies using Poetry:
+
+```bash
+poetry install
+```
+
+### Running the Application with Streamlit:
+
+Once the installation is complete, run the Streamlit application by executing the following command:
+
+```bash
+poetry run streamlit run llm_spotify/app.py --server.fileWatcherType none
+```
