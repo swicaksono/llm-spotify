@@ -45,7 +45,7 @@ def insert_embeddings(client: QdrantClient, collection_name: str = QDRANT_COLLEC
                             "rating": review["rating"]}     
             } for idx, review in enumerate(doc_embeddings)]}
     
-    upsert_data(client=client, data=batch_data["points"], collection_name=QDRANT_COLLECTION_NAME)
+    upsert_data(client=client, data=batch_data["points"], collection_name=collection_name)
     
     return
 
