@@ -20,6 +20,8 @@ qdrant-client = "^1.7.3"
 python-dotenv = "^1.0.1"
 ragatouille = "^0.0.7.post9"
 streamlit = "^1.31.1"
+accelerate = "^0.27.2"
+bitsandbytes = "^0.42.0"
 
 
 [tool.poetry.group.dev.dependencies]
