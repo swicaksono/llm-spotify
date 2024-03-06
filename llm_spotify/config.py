@@ -7,6 +7,7 @@ DATAPATH = os.getenv('DATAPATH')
 SAMPLING_DATA = True if str(os.getenv('SAMPLING_DATA')) == "true" else False
 MODEL_EMBEDDING = os.getenv('MODEL_EMBEDDING')
 READER_MODEL = os.getenv('READER_MODEL')
+MODEL_QUANTIZED = True if str(os.getenv('MODEL_QUANTIZED')) == "true" else False
 RERANK_MODEL = os.getenv('RERANK_MODEL')
 QA_GENERATION_MODEL = os.getenv('QA_GENERATION_MODEL')
 EVALUTOR_MODEL = os.getenv('EVALUTOR_MODEL')
