@@ -3,6 +3,7 @@ from ragatouille import RAGPretrainedModel
 from typing import Tuple, List, Dict, Optional
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 
+from llm_spotify.config import QDRANT_COLLECTION_NAME
 from llm_spotify.rerank import RERANKER
 from llm_spotify.indexing import semantic_search, build_client
 from llm_spotify.prompt import PROMP_IN_CHAT_FORMAT
@@ -29,7 +30,11 @@ def answer_with_rag(
 
     # Gather documents with retriever
     print("=> Retrieving documents...")
-    relevant_docs = semantic_search(query=question, client=QDRANT_CLIENT, embedding_model=EMBEDDING_MODEL, top_k=num_retrieved_docs)
+    relevant_docs = semantic_search(query=question, 
+                                    client=QDRANT_CLIENT,
+                                    embedding_model=EMBEDDING_MODEL, 
+                                    top_k=num_retrieved_docs, 
+                                    collection_name=QDRANT_COLLECTION_NAME)
     relevant_docs = [doc.payload['text'] for doc in relevant_docs]  # keep only the text
 
     # Optionally rerank results
