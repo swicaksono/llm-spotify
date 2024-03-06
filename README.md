@@ -117,7 +117,9 @@ Overall, these issues seem to stem from a combination of technical difficulties,
 Overall, these trends suggest a need for greater attention to user feedback and preferences, as well as a focus on improving stability, customization, and value for money. By addressing these concerns, the company can improve user satisfaction and loyalty, and stay ahead of competitors in a crowded market.
 
 ###  Demo
-![Demo Video](/assets/llm-demo-spotify-rag.mov)
+<video width="320" height="240" controls>
+  <source src="/assets/llm-demo-spotify-rag.mov" type="video/mp4">
+</video>
 
 ## How to Run
 
